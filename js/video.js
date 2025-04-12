@@ -48,6 +48,30 @@ document.querySelector("#faster").addEventListener("click", function() {
 
 });
 
+document.querySelector("#skip").addEventListener("click", function() {
+	const video = document.querySelector("video")
+	video.currentTime += 10 
+	if (video.ended) {
+		video.currentTime = 0;
+		video.play();
+	}
+	
+});
 
+
+document.querySelector("#mute").addEventListener("click", function()
+
+{
+	const video = document.querySelector("video")
+	video.muted = !video.muted;
+	if (video.muted === true) {
+		document.querySelector("#mute").innerHTML = "Muted"
+	}
+	else document.querySelector("#mute").innerHTML = "Mute"
+
+});
+
+
+ 
 
 

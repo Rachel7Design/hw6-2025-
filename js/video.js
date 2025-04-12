@@ -17,7 +17,7 @@ document.querySelector("#play").addEventListener("click", function() {
 	const video = document.querySelector("video")
 	video.play();
 	console.log("Play Video");
-	video.volume = 0.5;
+	video.volume = 0.0;
 	console.log(video.volume * 100 + "%");
 });
 
@@ -32,7 +32,7 @@ document.querySelector("#pause").addEventListener("click", function() {
 document.querySelector("#slower").addEventListener("click", function() {
 
 	const video = document.querySelector("video")
-	video.playbackRate = .1;
+	video.playbackRate -= .1;
 	console.log(video.playbackRate * 100 + "%")
 
 
@@ -42,9 +42,11 @@ document.querySelector("#slower").addEventListener("click", function() {
 document.querySelector("#faster").addEventListener("click", function() {
 
 	const video = document.querySelector("video")
-	video.playbackRate = 1.1;
+	video.playbackRate += .1;
 	console.log(video.playbackRate * 100 + "%")
 
 });
+
+
 
 

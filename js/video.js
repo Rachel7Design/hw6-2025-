@@ -65,7 +65,7 @@ document.querySelector("#mute").addEventListener("click", function()
 	const video = document.querySelector("video")
 	video.muted = !video.muted;
 	if (video.muted === true) {
-		document.querySelector("#mute").innerHTML = "Muted"
+		document.querySelector("#mute").innerHTML = "Unmute"
 	}
 	else document.querySelector("#mute").innerHTML = "Mute"
 
